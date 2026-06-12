@@ -1,20 +1,14 @@
-﻿
-
-    Console.Write("Informe a nota final: ");
-    if (double.TryParse(Console.ReadLine(), out double notaFinal))
-{
-
-        if (notaFinal >= 7)
-        {
-            Console.WriteLine("Estudante aprovado.");
-        }
-        else if (notaFinal >= 5)
-        {
-            Console.WriteLine("Estudante em recuperação.");
-        }
-        else
-        {
-            Console.WriteLine("Estudante reprovado.");
-        }
-       
+﻿Console.WriteLine("temperatura atual em graus celsius: "); 
+float temperatura = float.Parse(Console.ReadLine());
+if (temperatura < 18) 
+{ 
+    Console.WriteLine("ambiente frio"); 
+} 
+else if (temperatura >= 18 && temperatura <= 26) 
+{ 
+    Console.WriteLine("ambiente confortável."); 
+} 
+else 
+{ 
+    Console.WriteLine("ambiente quente"); 
 }
