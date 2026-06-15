@@ -1,17 +1,15 @@
-﻿using System.Globalization;
+﻿Console.Write("Informe a quantidade de tarefas concluídas: ");
+int tarefasConcluidas = int.Parse(Console.ReadLine());
 
-Console.Write("Informe o valor total da compra: ");
-decimal valorCompra = decimal.Parse(Console.ReadLine(), new CultureInfo("pt-BR"));
-
-decimal desconto = 0;
-
-if (valorCompra >= 200)
+if (tarefasConcluidas >= 50)
 {
-    desconto = valorCompra * 0.10m;
+    Console.WriteLine("Meta atingida.");
+    Console.WriteLine($"Tarefas concluídas: {tarefasConcluidas}");
 }
+else
+{
+    int faltaram = 50 - tarefasConcluidas;
 
-decimal valorFinal = valorCompra - desconto;
-
-Console.WriteLine($"Valor original: R$ {valorCompra:F2}");
-Console.WriteLine($"Desconto aplicado: R$ {desconto:F2}");
-Console.WriteLine($"Valor final: R$ {valorFinal:F2}");
+    Console.WriteLine("Meta não atingida.");
+    Console.WriteLine($"Faltaram {faltaram} tarefas.");
+}
