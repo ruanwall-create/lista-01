@@ -1,7 +1,20 @@
-﻿Console.Write("Informe o número da tabuada: ");
-int numero = int.Parse(Console.ReadLine());
+﻿Console.Write("Informe o primeiro valor: ");
+decimal valor1 = decimal.Parse(Console.ReadLine()!);
 
-for (int i = 1; i <= 10; i++)
-{
-    Console.WriteLine($"{numero} x {i} = {numero * i}");
-}
+Console.Write("Informe o segundo valor: ");
+decimal valor2 = decimal.Parse(Console.ReadLine()!);
+
+Console.Write("Informe o terceiro valor: ");
+decimal valor3 = decimal.Parse(Console.ReadLine()!);
+
+Console.Write("Informe o quarto valor: ");
+decimal valor4 = decimal.Parse(Console.ReadLine()!);
+
+Console.Write("Informe o quinto valor: ");
+decimal valor5 = decimal.Parse(Console.ReadLine()!);
+
+decimal soma = valor1 + valor2 + valor3 + valor4 + valor5;
+decimal media = soma / 5;
+
+Console.WriteLine($"Soma dos valores: {soma}");
+Console.WriteLine($"Média dos valores: {media}");
